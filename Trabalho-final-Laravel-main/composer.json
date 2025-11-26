@@ -52,12 +52,12 @@
             "dont-discover": []
         }
     },
-    "config": {
+"config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
-        "allow-plugins": {
-            "pestphp/pest-plugin": true
+        "audit": {
+            "block-insecure": false
         }
     },
     "minimum-stability": "stable",
