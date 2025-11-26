@@ -6,8 +6,9 @@ use App\Http\Controllers\ProdutoController;
 
 // --- ROTAS PÚBLICAS (Sistema Funcional) ---
 
-// Home
-Route::get('/', [ProdutoController::class, 'index']);
+Route::get('/', function () {
+    return view('welcome');
+});
 
 // CRUD de Produtos (Rotas Manuais)
 Route::get('/produtos', [ProdutoController::class, 'index'])->name('produtos.index');
